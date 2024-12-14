@@ -6,159 +6,160 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./index.css">
-
 </head>
 <body>
-<!-- navigation section -->
-<nav class="navbar">
-    <div class="navbar-container">
-        <img src="./Assets/My profile.jpg" alt="my image" class="my image">
-        <h3 class="name">Vincent TWIZERE</h3>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about me">About Me</a></li>
-            <li><a href="#what I do">What I do</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <br>
-        <div class="social-media">
-            <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-    </div>
-</nav>
-<div class="main-content">
-    <!-- Main content of your page -->
-    <h2>Welcome</2>
-    <h1 id="demo"></h1>
-    <br>
-    <h2>Based in Kigali, Rwanda.</h2>
-    <br>
-    <button>Hire me</button>
-
-    <div id="arrow" class="arrow">▼</div>
+    <!-- Header Section with Navigation -->
     
-    <section id="about-me">
-        <!-- About me section -->
-        <div>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <img src="./Assets/My profile.jpg" alt="my image" class="my-image">
+            <h3 class="name">Vincent TWIZERE</h3>
             
+            <!-- Hamburger Icon (visible on small screens) -->
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            
+            <!-- Navbar Links -->
+            
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#what-I-do">What I do</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </nav>
+    
+    
+
+    <!-- Main Content Section -->
+    <main id="main-content">
+        <section id="home">
+            <h2>Welcome</h2>
+            <h1 id="demo"></h1>
+            <p>Based in Kigali, Rwanda.</p>
+            <button>Hire me</button>
+            <div id="arrow" class="arrow">▼</div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about-me">
             <h1>Know Me More</h1>
             <hr class="line">
-            <br>
-            <h2> I'm Vincent Twizere, a web and mobile developer.</h2>
-            <p>I'm dedicated and enthusiastic web developer with a passion for crafting engaging and intuitive online experiences. With [X] years in the field, I've honed my skills in both front-end and back-end development, allowing me to bring a holistic approach to every project I undertake.</p>
-            <br>
-            <p>My expertise lies in creating user-friendly, visually appealing, and highly functional web and mobile applications. "Not what you want, but what you deserve" is our mantra, ensuring that every project exceeds your expectations and delivers exceptional value.</p>
-        </div>
-        
-        <div id="contact">
-            
-            <h2>Name: Vincent Twizere</h2>
+            <p>I'm Vincent Twizere, a web and mobile developer. I'm dedicated and enthusiastic about creating engaging and intuitive online experiences. With [X] years in the field, I have honed my skills in both front-end and back-end development.</p>
+            <p>My expertise lies in creating user-friendly, visually appealing, and highly functional web and mobile applications.</p>
+            <div class="contact-details">
+                <h2>Contact Information</h2>
+                <p>Name: Vincent Twizere</p>
+                <p>Email: vincenttwizere12@gmail.com</p>
+                <p>Phone: +250788888888</p>
+                <p>From: Kigali, Rwanda</p>
+                <button>Download CV</button>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="statistics">
+            <div class="stat-item">
+                <span class="number" id="yearsExperience">2 +</span>
+                <span class="description">Years Experience</span>
+            </div>
+            <div class="stat-item">
+                <span class="number" id="happyClients">10 +</span>
+                <span class="description">Happy Clients</span>
+            </div>
+            <div class="stat-item">
+                <span class="number" id="projectsDone">10 +</span>
+                <span class="description">Projects Done</span>
+            </div>
+        </section>
+
+        <!-- What I Do Section -->
+        <section id="what-I-do">
+            <h1>What I Do</h1>
+            <hr class="line">
+            <div class="service-items">
+                <div class="service-item">
+                    <i class="fas fa-palette"></i>
+                    <h2>Graphic Designer</h2>
+                    <p>I design logos, brands, and print materials with a strong understanding of typography, color theory, and composition.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>I develop websites using HTML, CSS, and JavaScript, following best web development practices.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h2>Mobile Developer</h2>
+                    <p>I develop mobile applications using React Native with a focus on mobile development principles.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-code"></i>
+                    <h2>UI/UX Designer</h2>
+                    <p>I design user interfaces and experiences for both web and mobile applications, ensuring usability and visual appeal.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume">
+            <h1>Resume</h1>
             <hr>
-            <h2>Email: vincenttwizere12@gmail.com</h2>
-            <hr>
-            <h2>Phone: +250788888888</h2>
-            <hr>
-            <h2>From: Kigali, Rwanda</h2>
-            
-            <button>Download CV</button>
-        </div>
-        
-    </section>
+            <div class="container">
+                <article class="card">
+                    <h2>My Education</h2>
+                    <div class="card-content">
+                        <h3>2000 - 2004</h3>
+                        <h4>Computer Science</h4>
+                        <p>International University</p>
+                        <p>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                    </div>
+                    <div class="card-content">
+                        <h3>2005 - 2008</h3>
+                        <h4>Bachelor Degree</h4>
+                        <p>University of California</p>
+                        <p>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                    </div>
+                </article>
 
-    <div class="container">
-        <div class="stat-item">
-            <span class="number" id="yearsExperience">2 +</span>
-            <span class="description">Years Experience</span>
-        </div>
-        <div class="stat-item">
-            <span class="number" id="happyClients">10 +</span>
-            <span class="description">Happy Clients</span>
-        </div>
-        <div class="stat-item">
-            <span class="number" id="projectsDone">10 +</span>
-            <span class="description">Projects Done</span>
-        </div>
-    </div>
+                <article class="card">
+                    <h2>My Experience</h2>
+                    <div class="card-content">
+                        <h3>2012 - 2013</h3>
+                        <h4>Jr. UI UX Designer</h4>
+                        <p>Themeforest</p>
+                        <p>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                    </div>
+                    <div class="card-content">
+                        <h3>2014 - 2016</h3>
+                        <h4>Jr. Product Designer</h4>
+                        <p>Dribbble</p>
+                        <p>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2024 Vincent Twizere. All rights reserved.</p>
+        </footer>
+    </main>
 
-</div>
-<div id="what-I-do">
-    <h1 id="service">What I do</h1>
-    <hr class="line">
-    <br>
-    <div class="service-items">
-        
 
-            <div class="service-item">
-                <i class="fas fa-palette"></i>
-                <h2>Graphic Designer</h2>
-                <p>I have experience in designing logos, brands, and print materials. I have a strong understanding of typography, color theory, and composition.</p>
-            </div>
-            <div class="service-item">
-                <i class="fas fa-code"></i>
-                <h2>Web Developer</h2>
-                <p>I have experience in developing websites using HTML, CSS, and JavaScript. I have a strong understanding of web development principles and best practices.</p>
-            </div>
-        
-        <div class="service-item">
-            <i class="fas fa-mobile-alt"></i>
-            <h2>Mobile Developer</h2>
-            <p>I have experience in developing mobile applications using React Native. I have a strong understanding of mobile development principles and best practices.</p>
-        </div>
-        <div class="service-item">
-            <i class="fas fa-code"></i>
-            <h2>UI/UX Designer</h2>
-            <p>I have experience in designing user interfaces and user experiences for web and mobile applications. I have a strong understanding of UX principles and best practices.</p>
-        </div>
-    </div>
-
-</div>
-<div>
-    <h1 class="Resume">Resume</h1>
-    <hr>
-    <div class="container">
-        <div class="card">
-            <h2>My Education</h2>
-            <div class="card-content">
-                <h3>2000 - 2004</h3>
-                <h4>Computer Science</h4>
-                <p>International University</p>
-                <p>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
-            </div>
-            <div class="card-content">
-                <h3>2005 - 2008</h3>
-                <h4>Bachelor Degree</h4>
-                <p>University of California</p>
-                <p>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
-            </div>
-         
-        </div>
-
-        <div class="card">
-            <h2>My Experience</h2>
-            <div class="card-content">
-                <h3>2012 - 2013</h3>
-                <h4>Jr. UI UX Designer</h4>
-                <p>Themeforest</p>
-                <p>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
-            </div>
-            <div class="card-content">
-                <h3>2014 - 2016</h3>
-                <h4>Jr. Product Designer</h4>
-                <p>Dribbble</p>
-                <p>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
-            </div>
-         
-        </div>
-    </div>
-</div>
-<!-- Link to the JavaScript file -->
-<script src="script.js"></script>
-
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
