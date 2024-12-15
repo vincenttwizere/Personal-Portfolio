@@ -406,3 +406,146 @@ body {
         background-color: red;
     }
 }
+
+/* General Contact Section Styles */
+#contact {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+#contact h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Contact Container with Flexbox */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap; 
+    margin-top: 20px;
+}
+
+/* Contact Info Section */
+.contact-info {
+    flex: 1;
+    min-width: 300px; 
+    text-align: left;
+}
+
+.contact-detail {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center; 
+}
+
+.contact-detail i {
+    font-size: 20px; 
+    color: #007bff;
+    margin-right: 10px; 
+}
+
+.contact-detail h2 {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.contact-detail p {
+    font-size: 16px;
+    color: #555;
+}
+
+.contact-detail a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contact Form Section */
+.contact-form {
+    flex: 2;
+    min-width: 400px; 
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Form Styles */
+.contact-form h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 80%; 
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-detail i {
+        font-size: 18px; 
+    }
+
+    .contact-form {
+        width: 100%; 
+    }
+}
+
+
+
+
