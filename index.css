@@ -110,16 +110,16 @@ body {
     background-repeat: no-repeat;
     background-size: cover; 
 }
-#home h1 {
+#home h1, #what-I-do h1 {
     font-size: 40px;
     margin-bottom: 40px;
 }
 
-#home p {
+#home p, #what-I-do p {
     font-size: 24px;
     margin-bottom: 40px;
 }
-#home h2 {
+#home h2, #what-I-do h2 {
     font-size: 30px;
     margin-bottom: 40px;
 }
@@ -160,19 +160,28 @@ body {
 
 /* styles for about me */
 
-#about-me {
-    text-align: center; /* Center the content of the container */
+#about-me, 
+#what-I-do,
+#services, 
+#portfolio, 
+#contact {
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-#about-me h1 {
+ h1 {
     font-size: 40px;
     margin: 30px 0px;
-    display: inline-block; /* Make the border as wide as the text */
-    position: relative; /* To allow manipulation of the border */
+    display: inline-block;
+    position: relative; 
 }
 
 
-#about-me h1::after {
+ h1::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -187,6 +196,16 @@ body {
     transform: translateX(-50%); 
 }
 
+.about-me-content {
+    margin: 10px 60px;
+    text-align: justify;
+    line-height: 20px;
+    /* margin-bottom: 40px; */
+}
+.about-me-content p {
+    font-size: 18px;
+    margin: 10px;
+}
 
 /* Media Query for small screens */
 @media (max-width: 768px) {
